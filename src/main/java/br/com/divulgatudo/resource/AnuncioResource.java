@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.divulgatudo.model.Anuncio;
 import br.com.divulgatudo.service.AnuncioService;
 
-@RequestMapping("/anuncio")
+@RequestMapping("/anuncios")
 @RestController
 public class AnuncioResource {
 

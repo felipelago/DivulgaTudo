@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.divulgatudo.model.Cliente;
 import br.com.divulgatudo.service.ClienteService;
 
-@RequestMapping("/cliente")
+@RequestMapping("/clientes")
 @RestController
 public class ClienteResource {
 

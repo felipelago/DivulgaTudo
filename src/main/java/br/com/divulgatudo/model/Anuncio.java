@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
@@ -34,9 +35,11 @@ public class Anuncio implements Serializable {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(referencedColumnName = "id")
 	private Cliente cliente;
-
+	
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate dataInicio;
-
+	
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate dataTermino;
 
 	private Double investimentoDiario;

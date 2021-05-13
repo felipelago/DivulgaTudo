@@ -8,7 +8,6 @@ import br.com.divulgatudo.model.Cliente;
 
 @Repository
 public interface AnuncioRepository extends JpaRepository<Anuncio, Long> {
-	
-	boolean existsByClient(Cliente cliente);
+
 
 }
